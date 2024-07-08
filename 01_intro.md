@@ -15,5 +15,5 @@ Comment je me débrouille à partir d'ici ?
 - comment je le fais fonctionner ?
 - comment je le modifie ?
 
-
+Le résultat généré devrait être ici [https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf](https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf)
 

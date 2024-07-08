@@ -31,5 +31,4 @@ pandoc livre.md --toc -V documentclass=report -V mainfont="Bookman" --variable s
 rm ../index.*.md
 rm ../README.md
 
-ln -s index.md ../README.md
 
