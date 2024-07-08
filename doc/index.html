@@ -1,0 +1,49 @@
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#pré-requis-et-clonage">Pré-requis et clonage</a></li>
+<li><a href="#génération">Génération</a></li>
+<li><a href="#modifier">modifier</a></li>
+<li><a href="#références">Références:</a></li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<p>Qui n'a jamais rêvé de pouvoir écrire des choses aux kilomètres dans une console et se concentrer sur ce que l'on veut dire et non où couper les mots, le nombre de caractères par lignes et avoir une sortie chiadée ?</p>
+<p>Jusqu'à présent la qualité «PAO» était réservé à des logiciels forts dispendieux, mais, et si on pouvait écrire un livre avec ... quasi rien (si on passe sous silence les 3Gbs d'installation de latex) ?</p>
+<p>Comment je me débrouille à partir d'ici ?</p>
+<ul>
+<li>pour dupliquer ça chez moi</li>
+<li>comment je le fais fonctionner ?</li>
+<li>comment je le modifie ?</li>
+</ul>
+<h1 id="pré-requis-et-clonage">Pré-requis et clonage</h1>
+<p>Que vous soyez sous linux ou windows, mes outils favoris sont inclus quand vous <a href="https://git-scm.com/downloads">installez git</a>. Surtout sous windows.</p>
+<p>L'explorateur de fichier sous windows vous permet dorénavant de faire un click droit sur un dossier et de faire « git bash here », et vous allez faire</p>
+<pre><code>    git clone https://github.com/jul/faire_un_livre.git</code></pre>
+<p>et maintenant faîtes</p>
+<pre><code>    cd faire_un_livre</code></pre>
+<p>Dans ce répertoire il y a un fichier : <code>02_quickstart</code> et bien ... c'est celui que vous lisez en ce moment.</p>
+<p>Pour les utilisateurs de windows qui vont avoir besoin de latex, je recommande chaudement l'utilisation de <a href="https://github.com/ScoopInstaller/Scoop">scoop</a> ou <a href="https://chocolatey.org/install#individual">choco</a></p>
+<p>D'ailleurs, j'incite tout le monde à se renseigner et/ou modifier ce texte sur comment installer pandoc et pdflatex qui vont être nécessaires pour la suite.</p>
+<p>Pour FreeBSD, il n'y a pas de package pdflatex il faut installer texlive et texformats : <code>pkg install texlive-texmf tex-formats tex-dvipsk</code></p>
+<h1 id="génération">Génération</h1>
+<p>Normalement, vous avez bash et vous tapez simplement :</p>
+<pre><code>    ./mkdoc.sh</code></pre>
+<p>là dans le répertoire <code>doc</code> est apparu <code>./doc/mon_livre.pdf</code></p>
+<p>La magie s'opère ainsi</p>
+<ul>
+<li>les fichiers terminants par md sont tous mis dans l'ordre alphabético-numérique dans un gros fichier ;</li>
+<li>on leur adjoint un en-tête contenant le titre ;</li>
+<li>on leur adjoint la table des contenus automatiquement générée.</li>
+</ul>
+<p>Il est possible d'ajouter des listes de tableaux et ou des illustrations.</p>
+<h1 id="modifier">modifier</h1>
+<p>Le fichier <code>titre_md</code> contient ce qui permet de faire le titre</p>
+<p>Le format des fichiers est en syntaxe « markdown » dont la syntaxe est documentée ici : <a href="https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax</a></p>
+<p>Les fichiers <code>xx_*md</code> sont les fichiers qui composent se livre.</p>
+<p>Pour générer un livre, il suffit d'installer tout les logiciles nécessaires (tex, latex, pdflatex, pandoc) en plus de ceux que vous avez déjà, et ensuite <code>./mkdoc.sh</code> vous générera la suite.</p>
+<h1 id="références">Références:</h1>
+<ul>
+<li>syntaxe bash <a href="https://tldp.org/LDP/abs/html/">https://tldp.org/LDP/abs/html/</a></li>
+<li>le site officiel de pandoc <a href="https://pandoc.org/">https://pandoc.org/</a></li>
+<li>la documentation markdown <a href="https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax</a></li>
+<li>le site où trouver ce livre et comment le fabriquer <a href="https://github.com/jul/faire_un_livre">https://github.com/jul/faire_un_livre</a></li>
+</ul>
