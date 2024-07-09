@@ -1,50 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="jul" />
+  <title>Faire un livre</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Faire un livre</h1>
+<p class="author">jul</p>
+<p class="date">6 juillet 2024</p>
+</header>
+<nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#pré-requis-et-clonage">Pré-requis et clonage</a></li>
-<li><a href="#génération">Génération</a></li>
-<li><a href="#modifier">modifier</a></li>
-<li><a href="#références">Références:</a></li>
+<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
+<li><a href="#pré-requis-et-clonage"
+id="toc-pré-requis-et-clonage">Pré-requis et clonage</a></li>
+<li><a href="#génération" id="toc-génération">Génération</a></li>
+<li><a href="#modifier" id="toc-modifier">modifier</a></li>
+<li><a href="#références" id="toc-références">Références</a></li>
 </ul>
+</nav>
 <h1 id="introduction">Introduction</h1>
-<p>Qui n'a jamais rêvé de pouvoir écrire des choses aux kilomètres dans une console et se concentrer sur ce que l'on veut dire et non où couper les mots, le nombre de caractères par lignes et avoir une sortie chiadée ?</p>
-<p>Jusqu'à présent la qualité «PAO» était réservé à des logiciels forts dispendieux, mais, et si on pouvait écrire un livre avec ... quasi rien (si on passe sous silence les 3Gbs d'installation de latex) ?</p>
-<p>Comment je me débrouille à partir d'ici ?</p>
-<ul>
-<li>pour dupliquer ça chez moi</li>
-<li>comment je le fais fonctionner ?</li>
-<li>comment je le modifie ?</li>
-</ul>
-<p>Le résultat généré devrait être ici <a href="https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf">https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf</a></p>
+<p>Qui n’a jamais rêvé de pouvoir écrire des choses aux kilomètres dans
+une console et se concentrer sur ce que l’on veut dire et non où couper
+les mots, le nombre de caractères par lignes et avoir une sortie chiadée
+?</p>
+<p>Jusqu’à présent la qualité «PAO» était réservé à des logiciels forts
+dispendieux, mais, et si on pouvait écrire un livre avec … quasi rien
+(si on passe sous silence les 3Gbs d’installation de latex) ?</p>
+<p>Comment je me débrouille à partir d’ici ? - pour dupliquer ça chez
+moi - comment je le fais fonctionner ? - comment je le modifie ?</p>
+<p>Le résultat généré devrait être ici <a
+href="https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf">https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf</a></p>
 <h1 id="pré-requis-et-clonage">Pré-requis et clonage</h1>
-<p>Que vous soyez sous linux ou windows, mes outils favoris sont inclus quand vous <a href="https://git-scm.com/downloads">installez git</a>. Surtout sous windows.</p>
-<p>L'explorateur de fichier sous windows vous permet dorénavant de faire un click droit sur un dossier et de faire « git bash here », et vous allez faire</p>
-<pre><code>    git clone https://github.com/jul/faire_un_livre.git</code></pre>
+<p>Que vous soyez sous linux ou windows, mes outils favoris sont inclus
+quand vous <a href="https://git-scm.com/downloads">installez git</a>.
+Surtout sous windows.</p>
+<p>L’explorateur de fichier sous windows vous permet dorénavant de faire
+un click droit sur un dossier et de faire « git bash here », et vous
+allez faire</p>
+<pre><code>    git clone https://github.com/jul/faire_un_livre.git
+</code></pre>
 <p>et maintenant faîtes</p>
 <pre><code>    cd faire_un_livre</code></pre>
-<p>Dans ce répertoire il y a un fichier : <code>02_quickstart</code> et bien ... c'est celui que vous lisez en ce moment.</p>
-<p>Pour les utilisateurs de windows qui vont avoir besoin de latex, je recommande chaudement l'utilisation de <a href="https://github.com/ScoopInstaller/Scoop">scoop</a> ou <a href="https://chocolatey.org/install#individual">choco</a></p>
-<p>D'ailleurs, j'incite tout le monde à se renseigner et/ou modifier ce texte sur comment installer pandoc et pdflatex qui vont être nécessaires pour la suite.</p>
-<p>Pour FreeBSD, il n'y a pas de package pdflatex il faut installer texlive et texformats : <code>pkg install texlive-texmf tex-formats tex-dvipsk</code></p>
+<p>Dans ce répertoire il y a un fichier : <code>02_quickstart</code> et
+bien … c’est celui que vous lisez en ce moment.</p>
+<p>Pour les utilisateurs de windows qui vont avoir besoin de latex, je
+recommande chaudement l’utilisation de <a
+href="https://github.com/ScoopInstaller/Scoop">scoop</a> ou <a
+href="https://chocolatey.org/install#individual">choco</a></p>
+<p>D’ailleurs, j’incite tout le monde à se renseigner et/ou modifier ce
+texte sur comment installer pandoc et pdflatex qui vont être nécessaires
+pour la suite.</p>
+<p>Pour FreeBSD, il n’y a pas de package pdflatex il faut installer
+texlive et texformats :
+<code>pkg install texlive-texmf tex-formats tex-dvipsk</code></p>
 <h1 id="génération">Génération</h1>
 <p>Normalement, vous avez bash et vous tapez simplement :</p>
 <pre><code>    ./mkdoc.sh</code></pre>
-<p>là dans le répertoire <code>doc</code> est apparu <code>./doc/mon_livre.pdf</code></p>
-<p>La magie s'opère ainsi</p>
+<p>là dans le répertoire <code>doc</code> est apparu
+<code>./doc/mon_livre.pdf</code></p>
+<p>La magie s’opère ainsi</p>
 <ul>
-<li>les fichiers terminants par md sont tous mis dans l'ordre alphabético-numérique dans un gros fichier ;</li>
+<li>les fichiers terminants par md sont tous mis dans l’ordre
+alphabético-numérique dans un gros fichier ;</li>
 <li>on leur adjoint un en-tête contenant le titre ;</li>
 <li>on leur adjoint la table des contenus automatiquement générée.</li>
 </ul>
-<p>Il est possible d'ajouter des listes de tableaux et ou des illustrations.</p>
+<p>Il est possible d’ajouter des listes de tableaux et ou des
+illustrations.</p>
 <h1 id="modifier">modifier</h1>
-<p>Le fichier <code>titre_md</code> contient ce qui permet de faire le titre</p>
-<p>Le format des fichiers est en syntaxe « markdown » dont la syntaxe est documentée ici : <a href="https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax</a></p>
-<p>Les fichiers <code>xx_*md</code> sont les fichiers qui composent se livre.</p>
-<p>Pour générer un livre, il suffit d'installer tout les logiciles nécessaires (tex, latex, pdflatex, pandoc) en plus de ceux que vous avez déjà, et ensuite <code>./mkdoc.sh</code> vous générera la suite.</p>
-<h1 id="références">Références:</h1>
+<p>Le fichier <code>titre_md</code> contient ce qui permet de faire le
+titre</p>
+<p>Le format des fichiers est en syntaxe « markdown » dont la syntaxe
+est documentée ici : <a
+href="https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax</a></p>
+<p>Les fichiers <code>xx_*md</code> sont les fichiers qui composent se
+livre.</p>
+<p>Pour générer un livre, il suffit d’installer tout les logiciles
+nécessaires (tex, latex, pdflatex, pandoc) en plus de ceux que vous avez
+déjà, et ensuite <code>./mkdoc.sh</code> vous générera la suite.</p>
+<h1 id="références">Références</h1>
 <ul>
-<li>syntaxe bash <a href="https://tldp.org/LDP/abs/html/">https://tldp.org/LDP/abs/html/</a></li>
-<li>le site officiel de pandoc <a href="https://pandoc.org/">https://pandoc.org/</a></li>
-<li>la documentation markdown <a href="https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax</a></li>
-<li>le site où trouver ce livre et comment le fabriquer <a href="https://github.com/jul/faire_un_livre">https://github.com/jul/faire_un_livre</a></li>
+<li>syntaxe bash <a
+href="https://tldp.org/LDP/abs/html/">https://tldp.org/LDP/abs/html/</a></li>
+<li>le site officiel de pandoc <a
+href="https://pandoc.org/">https://pandoc.org/</a></li>
+<li>la documentation markdown <a
+href="https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax</a></li>
+<li>le site où trouver ce livre et comment le fabriquer <a
+href="https://github.com/jul/faire_un_livre">https://github.com/jul/faire_un_livre</a></li>
 </ul>
+</body>
+</html>
