@@ -1,6 +1,11 @@
 % Faire un livre
 % jul
 % 6 juillet 2024
+---
+header-includes: |
+ \usepackage[french]{babel}
+---
+
 Introduction
 ============
 

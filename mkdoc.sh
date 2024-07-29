@@ -37,6 +37,6 @@ pandoc livre.md  --toc --pdf-engine=xelatex  -V papersize=A4 \
 pandoc livre.md --toc --standalone -s -c pandoc.css  -o index.html
 
 rm ../index.*.md
-ln -s $( realpath ./livre.md ) `pwd`/../README.md
+cp $( realpath ./livre.md ) `pwd`/../README.md
 
 
