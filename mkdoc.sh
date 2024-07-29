@@ -26,7 +26,14 @@ cp ../pandoc.css .
 cat ../titre_md ../index.pdf.md >> ./livre.md
 
 
-pandoc livre.md --toc -V --pdf-engine=xelatex -V papersize=A4 -V documentclass=report -V mainfont="Bookman" --variable sansfont="Helvetica" --variable monofont="Menlo" --variable fontsize=12pt   -o mon_livre.pdf
+pandoc livre.md --toc  --pdf-engine=xelatex -V papersize=A4 -V documentclass=report --variable fontsize=12pt   -o mon_livre.pdf
+pandoc livre.md  --toc --pdf-engine=xelatex  -V papersize=A4 \
+    -V documentclass=report   --variable fontsize=12pt \
+    -V "mainfont:AtkinsonHyperlegible" \
+    -V "mainfontoptions:Extension=.ttf, UprightFont=*-Regular, BoldFont=*-Bold,  ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic" \
+    -so livre_lisible.pdf
+
+
 pandoc livre.md --toc --standalone -s -c pandoc.css  -o index.html
 
 rm ../index.*.md
