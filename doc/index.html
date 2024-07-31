@@ -30,7 +30,8 @@
 <header id="title-block-header">
 <h1 class="title">Faire un livre</h1>
 <p class="author">jul</p>
-<p class="date">6 juillet 2024</p>
+<p class="date">6 juillet 2024 <span
+class="math inline"><em>V</em><em>e</em><em>r</em><em>s</em><em>i</em><em>o</em><em>n</em> : <em>f</em><em>u</em><em>v</em><em>e</em><em>u</em><em>r</em><em>i</em><em>e</em><em>n</em>:</span></p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -41,6 +42,7 @@ id="toc-pré-requis-et-clonage">Pré-requis et clonage</a></li>
 <li><a href="#modifier" id="toc-modifier">modifier</a></li>
 <li><a href="#accessibilité"
 id="toc-accessibilité">Accessibilité</a></li>
+<li><a href="#versioner" id="toc-versioner">Versioner</a></li>
 <li><a href="#références" id="toc-références">Références</a></li>
 </ul>
 </nav>
@@ -115,6 +117,16 @@ par l’institut braille</a> pour faciliter la lecture pour les
 dys-voyants et mal-voyants.</p>
 <p>Fonte qu’il va vous falloir télécharger et installer si vous voulez
 générer le livre en format « lisible ».</p>
+<h1 id="versioner">Versioner</h1>
+<p>La commande <em>versioner.sh</em> va introduire une chaîne aléatoire
+qui tente d’être prononçable après la date sur la couverture.</p>
+<p>Cela permet à ceux qui utilisent un gestionnaire de version comme moi
+de pouvoir remonter dans le passer faire les corrections et envoyer un
+cout de <em>git rebase -i</em> pour propager les corrections faîtes sur
+une ancienne version.</p>
+<p>Le fichier history.txt donne le hash de la révision git correspondant
+au commit précédent l’introduction de la version. Ça marque la révision
+qui vient d’être révolue.</p>
 <h1 id="références">Références</h1>
 <ul>
 <li>syntaxe bash <a
