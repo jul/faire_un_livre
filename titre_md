@@ -1,7 +1,7 @@
 % Faire un livre
 % jul
 % 6 juillet 2024 \
-    $Version:fuveurien:$
+    $Version:vitonsest:$
 ---
 header-includes: |
  \usepackage[french]{babel}
