@@ -54,7 +54,7 @@ pandoc livre.md -L ../bref.lua --toc --standalone -s -c pandoc.css  -o index.htm
 
 rm ../index.*.md
 if [ ! -z "$FILTER" ]; then
-    pandoc  $( realpath  livre.md ) $FILTER -o ../README.md
+    pandoc -L ../bref.lua $( realpath  livre.md ) $FILTER -o ../README.md
 else
     cp $( realpath ./livre.md ) `pwd`/../README.md
 fi

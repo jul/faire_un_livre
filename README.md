@@ -113,7 +113,7 @@ simple.
 
 ### Cas d'étude : j'ai un tic de langage je dis « bref » tout le temps
 
-Bref, je ne veux plus voir « bref » dans mes sorties !
+PROUT je ne veux plus voir « bref » dans mes sorties !
 
 le filtre lua suivant que l'on enregistra dans bref.lua :
 
@@ -125,7 +125,7 @@ function Str (el)
 end
 ```
 
-Retourne PROUT à chaque fois qu'il voit « Bref » seul.
+Retourne PROUT à chaque fois qu'il voit « PROUT » seul.
 
 On l'appelle dans la chaîne de production avec
 `pandoc --lua-filter bref.lua input.whatever -o output.peu_importe`
