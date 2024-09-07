@@ -25,7 +25,7 @@ Comment je me débrouille à partir d'ici ?
 - comment je le modifie ?
 
 [Le résultat généré est ici et le lien visible à la fin dans la liste
-des liens](https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf)
+des liens](https://github.com/jul/faire_un_livre/blob/main/doc/livre.pdf)
 
 # Pré-requis et clonage
 

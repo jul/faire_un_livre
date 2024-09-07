@@ -13,7 +13,7 @@ comment je le fais fonctionner ? - comment je le modifie ?
 
 [Le résultat généré est ici et le lien visible à la fin dans la liste
 des
-liens](https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf)
+liens](https://github.com/jul/faire_un_livre/blob/main/doc/livre.pdf)
 
 # Pré-requis et clonage
 
@@ -244,7 +244,7 @@ https://scorreia.com/software/panflute/
 https://brailleinstitute.org/freefont
 :   fonte conçue par l'institut braille
 
-https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf
+https://github.com/jul/faire_un_livre/blob/main/doc/livre.pdf
 :   Le résultat généré est ici et le lien visible à la fin dans la liste des liens
 
 </div>
