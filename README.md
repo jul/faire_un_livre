@@ -11,8 +11,9 @@ dispendieux, mais, et si on pouvait écrire un livre avec ... quasi rien
 Comment je me débrouille à partir d'ici ? - pour dupliquer ça chez moi -
 comment je le fais fonctionner ? - comment je le modifie ?
 
-Le résultat généré devrait être ici
-<https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf>
+[Le résultat généré est ici et le lien visible à la fin dans la liste
+des
+liens](https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf)
 
 # Pré-requis et clonage
 
@@ -222,6 +223,9 @@ vient d'être révolue.
 
 # Liste des liens
 
+https://git-scm.com/downloads
+:   Que vous soyez sous linux ou windows, mes outils favoris sont inclus quand vous installez le client git
+
 https://github.com/ScoopInstaller/Scoop
 :   l'installeur en ligne de commande scoop pour windows
 
@@ -240,7 +244,7 @@ https://scorreia.com/software/panflute/
 https://brailleinstitute.org/freefont
 :   fonte conçue par l'institut braille
 
-https://git-scm.com/downloads
-:   Que vous soyez sous linux ou windows, mes outils favoris sont inclus quand vous installez le client git
+https://github.com/jul/faire_un_livre/blob/main/doc/mon_livre.pdf
+:   Le résultat généré est ici et le lien visible à la fin dans la liste des liens
 
 </div>

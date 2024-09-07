@@ -50,7 +50,7 @@ pandoc livre.md -L ../bref.lua $FILTER --toc --pdf-engine=xelatex  -V papersize=
     -so livre.pdf
 
 
-pandoc livre.md -L ../bref.lua --toc --standalone -s -c pandoc.css  -o index.htm
+pandoc livre.md -L ../bref.lua --toc --standalone -s -c pandoc.css  -o index.html
 
 rm ../index.*.md
 if [ ! -z "$FILTER" ]; then
