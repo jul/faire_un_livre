@@ -33,12 +33,13 @@ rm README.md
 cp *md doc/
 cd doc 
 cat ../??_*.md  > index.md
-pandoc -f gfm  -s index.md -o ../index.pdf.md
+pandoc -f gfm $FILTER  -s index.md -o ../index.pdf.md
 
 rm *md
 cat ../??_*.md  > ../index.pdf.md
 cp ../pandoc.css .
 cat ../titre_md ../index.pdf.md >> ./livre.md
+
 
 
 #pandoc livre.md --toc $FILTER --pdf-engine=xelatex -V papersize=A4 -V documentclass=report --variable fontsize=12pt   -o mon_livre.pdf
@@ -49,9 +50,13 @@ pandoc livre.md -L ../bref.lua $FILTER --toc --pdf-engine=xelatex  -V papersize=
     -so livre.pdf
 
 
-pandoc livre.md -L ../bref.lua --toc --standalone -s -c pandoc.css  -o index.html
+pandoc livre.md -L ../bref.lua --toc --standalone -s -c pandoc.css  -o index.htm
 
 rm ../index.*.md
-cp $( realpath ./livre.md ) `pwd`/../README.md
+if [ ! -z "$FILTER" ]; then
+    pandoc  $( realpath  livre.md ) $FILTER -o ../README.md
+else
+    cp $( realpath ./livre.md ) `pwd`/../README.md
+fi
 
 
