@@ -12,7 +12,22 @@ Generates the book. Requires pandoc and pdflatex for making the book
     ./mkdoc.sh
 
 =cut
+
+
+
 rm doc -rf
+
+HAS_PANFLUTE=$( python -mpanflute 2>&1 | grep package > /dev/null )
+
+if $HAS_PANFLUTE; then
+    echo "has panflute"
+else
+    echo "CHECK virtualenv + pip install panflute"
+fi
+FILTER=""
+if $HAS_PANFLUTE; then
+    FILTER=" -F ../add_link_list.py "
+fi
 [ -d doc ] || mkdir -p doc/img
 rm README.md
 cp *md doc/
@@ -26,7 +41,7 @@ cp ../pandoc.css .
 cat ../titre_md ../index.pdf.md >> ./livre.md
 
 
-pandoc livre.md --toc  --pdf-engine=xelatex -V papersize=A4 -V documentclass=report --variable fontsize=12pt   -o mon_livre.pdf
+pandoc livre.md --toc $FILTER --pdf-engine=xelatex -V papersize=A4 -V documentclass=report --variable fontsize=12pt   -o mon_livre.pdf
 pandoc livre.md  --toc --pdf-engine=xelatex  -V papersize=A4 \
     -V documentclass=report   --variable fontsize=12pt \
     -V "mainfont:AtkinsonHyperlegible" \
