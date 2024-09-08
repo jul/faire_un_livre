@@ -17,16 +17,11 @@ Generates the book. Requires pandoc and pdflatex for making the book
 
 rm doc -rf
 
-HAS_PANFLUTE=$( python -mpanflute 2>&1 | grep package > /dev/null )
-
-if $HAS_PANFLUTE; then
-    echo "has panflute"
-else
-    echo "CHECK virtualenv + pip install panflute"
-fi
-FILTER=""
-if $HAS_PANFLUTE; then
-    FILTER=" -F ../add_link_list.py "
+FILTER=
+which python &> /dev/null && FILTER=" -F ../add_link_list.py "
+if [ -z "$FILTER" ] ; then
+        echo "python installed?"
+        echo "CHECK virtualenv + pip install panflute"
 fi
 [ -d doc ] || mkdir -p doc/img
 rm README.md

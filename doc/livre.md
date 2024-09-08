@@ -136,7 +136,7 @@ Pour générer un livre, il suffit d'installer tout les logiciles nécessaires
 
 
 
-# Pandoc et python
+# Pandoc et python : faire des filtres
 
 Alors, pourquoi ne pas utiliser l'excellent pandocfilters et panflute ?
 
