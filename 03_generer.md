@@ -6,7 +6,7 @@ Normalement, vous avez bash et vous tapez simplement :
     ./mkdoc.sh
 ```
 
-là dans le répertoire `doc` est apparu `./doc/mon_livre.pdf`
+là dans le répertoire `doc` est apparu `./doc/livre.pdf`
 
 La magie s'opère ainsi
 
