@@ -1,4 +1,4 @@
-# Pandoc et python
+# Pandoc et python : faire des filtres
 
 Alors, pourquoi ne pas utiliser l'excellent pandocfilters et panflute ?
 
