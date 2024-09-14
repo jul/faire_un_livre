@@ -35,7 +35,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -95,6 +95,8 @@
 <h1 class="title">Faire un livre</h1>
 <p class="author">jul</p>
 <p class="date">6 juillet 2024<br />
+<br />
+<img src="./img/logo.jpg" style="width:7cm" /><br />
 <span
 class="math inline"><em>V</em><em>e</em><em>r</em><em>s</em><em>i</em><em>o</em><em>n</em> : <em>q</em><em>u</em><em>r</em><em>e</em><em>m</em><em>o</em><em>n</em><em>t</em><em>u</em>:</span></p>
 </header>
@@ -130,6 +132,9 @@ complexe (avec mémoire) rajouter une liste des liens</a></li>
 <li><a href="#accessibilité"
 id="toc-accessibilité">Accessibilité</a></li>
 <li><a href="#versioner" id="toc-versioner">Versioner</a></li>
+<li><a href="#faire-un-livre-a5-avec-une-imprimante-recto-a4"
+id="toc-faire-un-livre-a5-avec-une-imprimante-recto-a4">Faire un livre
+A5 avec une imprimante recto A4</a></li>
 <li><a href="#références" id="toc-références">Références</a></li>
 </ul>
 </nav>
@@ -338,6 +343,30 @@ une ancienne version.</p>
 <p>Le fichier history.txt donne le hash de la révision git correspondant
 au commit précédent l’introduction de la version. Ça marque la révision
 qui vient d’être révolue.</p>
+<h1 id="faire-un-livre-a5-avec-une-imprimante-recto-a4">Faire un livre
+A5 avec une imprimante recto A4</h1>
+<p>Faire un pdf lisible sur ordinateur, c’est bien, mais on veut parfois
+aussi se faire un petit format qui encombre moins et coûte moins cher.
+Et puis vu que le reprographe en ville prend 20 centimes la page là où
+mon imprimante laser est à 5 centimes et la feuille de papier à 1,5
+centimes, et prend la reliure à 4 € là où un pistolet à colle fait
+l’affaire, alors, pour les petites séries on est tenté de le faire à la
+main.</p>
+<p>Ici, je fournis dans la chaîne de production incluse un petit
+utilitaire <code>mkbooklet.sh</code> qui transforme une suite linéaire
+de feuille A4 en format 2 par 2 par lot de 16 feuillets consécutifs. Ce
+qui permet de brocher puis coller les brochures contre un carton ce qui
+fait amplement l’affaire.</p>
+<p>C’est très root, c’est probablement le style le plus hipster que vous
+pouvez trouver en ville.</p>
+<figure>
+<img src="./img/fini.jpg" style="width:10cm"
+alt="Voici un exemple de livre fini" />
+<figcaption aria-hidden="true">Voici un exemple de livre
+fini</figcaption>
+</figure>
+<p>Avec ça, je pense avoir couvert la partie qui ne dépend pas de votre
+plume, de l’édition, jusqu’à la reliure.</p>
 <h1 id="références">Références</h1>
 <ul>
 <li>syntaxe bash <a

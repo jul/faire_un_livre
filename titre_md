@@ -1,6 +1,8 @@
 % Faire un livre
 % jul
 % 6 juillet 2024 \
+    \
+    ![](./img/logo.jpg){width=7cm} \
     $Version:quremontu:$
 ---
 header-includes: |
