@@ -3,7 +3,7 @@
 % 6 juillet 2024 \
     \
     ![](./img/logo.jpg){width=7cm} \
-    $Version:bontririr:$
+    $Version:ceuraireu:$
 ---
 header-includes: |
  \usepackage[french]{babel}
@@ -285,6 +285,8 @@ C'est très root, c'est probablement le style le plus hipster que vous pouvez
 trouver en ville.
 
 ![Voici un exemple de livre fini](./img/fini.jpg){width=10cm}
+![Livre broché](./img/fini2.jpg){width=10cm}
+![Livre qui tient](./img/fini3.jpg){width=10cm}
 
 
 Avec ça, je pense avoir couvert la partie qui ne dépend pas de votre plume, de
@@ -293,6 +295,5 @@ l'édition, jusqu'à la reliure.
 # Références
 
 - syntaxe bash [https://tldp.org/LDP/abs/html/](https://tldp.org/LDP/abs/html/)
-- le site officiel de pandoc [https://pandoc.org/](https://pandoc.org/)
 - la documentation markdown [https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - le site où trouver ce livre et comment le fabriquer [https://github.com/jul/faire\_un\_livre](https://github.com/jul/faire_un_livre)

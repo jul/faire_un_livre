@@ -11,7 +11,8 @@ def action(elem, doc):
     if isinstance(elem, Link) and elem.url != stringify(elem.content):
         _def = elem.url
         item =  DefinitionItem( [ Str(_def)], [Definition(Plain(Str(f"{stringify(elem.content)}")))], )
-        toc.content.insert(-1,item)
+        if True or "img" not in elem.url:
+            toc.content.insert(-1,item)
 
 def finalize(doc):
     ttoc = Div(
