@@ -3,7 +3,7 @@
 % 6 juillet 2024 \
     \
     ![](./img/logo.jpg){width=7cm} \
-    $Version:ceuraireu:$
+    $Version:standesan:$
 ---
 header-includes: |
  \usepackage[french]{babel}

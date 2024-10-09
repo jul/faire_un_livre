@@ -16,7 +16,9 @@ C'est très root, c'est probablement le style le plus hipster que vous pouvez
 trouver en ville.
 
 ![Voici un exemple de livre fini](./img/fini.jpg){width=10cm}
+
 ![Livre broché](./img/fini2.jpg){width=10cm}
+
 ![Livre qui tient](./img/fini3.jpg){width=10cm}
 
 
