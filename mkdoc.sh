@@ -40,12 +40,16 @@ cat ../titre_md ../index.pdf.md >> ./livre.md
 pandoc livre.md -L ../bref.lua $FILTER --toc --pdf-engine=xelatex  -V papersize=A4 \
     -V documentclass=report   --variable fontsize=12pt \
     -V "mainfont:AtkinsonHyperlegible" \
+    -V papersize=a4 \
+    -V geometry:margin=2.5cm \
     -V "mainfontoptions:UprightFont=*-Regular, BoldFont=*-Bold,  ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic" \
     -so livre.pdf
 
 pandoc livre.md -L ../bref.lua $FILTER --toc --pdf-engine=xelatex  -V papersize=A4 \
     -V documentclass=extbook  --variable fontsize=17pt \
     -V "mainfont:AtkinsonHyperlegible" \
+    -V papersize=a4 \
+    -V  geometry:margin=2.5cm \
     -V "mainfontoptions:UprightFont=*-Regular, BoldFont=*-Bold,  ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic" \
     -so livre_A5_pre.pdf
 
