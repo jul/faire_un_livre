@@ -288,6 +288,8 @@ plume, de l'édition, jusqu'à la reliure.
     <https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>
 -   le site où trouver ce livre et comment le fabriquer
     <https://github.com/jul/faire_un_livre>
+-   [exemple de livre fait avec
+    gabarit](https://github.com/jul/faire_un_livre/exemple/sherpa.pdf)
 
 <div>
 
@@ -319,6 +321,9 @@ https://scorreia.com/software/panflute/
 
 https://brailleinstitute.org/freefont
 :   fonte conçue par l'institut braille
+
+https://github.com/jul/faire_un_livre/exemple/sherpa.pdf
+:   exemple de livre fait avec gabarit
 
 https://github.com/jul/faire_un_livre/blob/main/doc/livre.pdf
 :   Le résultat généré est ici et le lien visible à la fin dans la liste des liens
