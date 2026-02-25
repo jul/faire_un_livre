@@ -52,7 +52,7 @@ pandoc livre.md -L ../bref.lua $FILTER --toc --pdf-engine=xelatex  -V papersize=
     -so livre_A5_pre.pdf
 
 
-pandoc livre.md -L ../bref.lua --toc --standalone -s -c pandoc.css  -o index.html
+pandoc livre.md -L ../bref.lua --toc --standalone --embed-resources -s -c pandoc.css  -o index.html
 
 ../mkbooklet.sh livre_A5_pre.pdf
 
