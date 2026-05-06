@@ -26,7 +26,7 @@ D'ailleurs, j'incite tout le monde à se renseigner et/ou modifier ce texte
 sur comment installer pandoc et pdflatex qui vont être nécessaires pour la suite.
 
 
-Note : que ce soit *choco, scoop (windows), pkg (debian) ou apt (BSD)* on
+Note : que ce soit *choco, scoop (windows), apt (debian) ou pkg (BSD)* on
 installe les logiciels libres en faisant `installer install nom_du paquet` et
 oui installer latex sur windows peut se faire avec ` choco install xetex `.
 

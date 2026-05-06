@@ -44,7 +44,7 @@ D'ailleurs, j'incite tout le monde à se renseigner et/ou modifier ce
 texte sur comment installer pandoc et pdflatex qui vont être nécessaires
 pour la suite.
 
-Note : que ce soit *choco, scoop (windows), pkg (debian) ou apt (BSD)*
+Note : que ce soit *choco, scoop (windows), apt (debian) ou pkg (BSD)*
 on installe les logiciels libres en faisant
 `installer install nom_du paquet` et oui installer latex sur windows
 peut se faire avec `choco install xetex`.
@@ -99,10 +99,10 @@ là dans le répertoire `doc` est apparu `./doc/livre.pdf`
 
 La magie s'opère ainsi
 
--   les fichiers terminants par md sont tous mis dans l'ordre
-    alphabético-numérique dans un gros fichier ;
--   on leur adjoint un en-tête contenant le titre ;
--   on leur adjoint la table des contenus automatiquement générée.
+- les fichiers terminants par md sont tous mis dans l'ordre
+  alphabético-numérique dans un gros fichier ;
+- on leur adjoint un en-tête contenant le titre ;
+- on leur adjoint la table des contenus automatiquement générée.
 
 Il est possible d'ajouter des listes de tableaux et ou des
 illustrations.
@@ -137,10 +137,10 @@ comme un grand j'ai décidé de coder mon propre filtre.
 
 Deux choses aident :
 
--   [la documentation de pandoc est claire quoique
-    concise](https://pandoc.org/filters.html)
--   [on trouve beaucoup de question réponses sur pandoc sur
-    stackoverflow](https://stackoverflow.com/questions/tagged/pandoc?tab=Votes)
+- [la documentation de pandoc est claire quoique
+  concise](https://pandoc.org/filters.html)
+- [on trouve beaucoup de question réponses sur pandoc sur
+  stackoverflow](https://stackoverflow.com/questions/tagged/pandoc?tab=Votes)
 
 ## Pandoc et lua
 
@@ -184,9 +184,8 @@ seulement on pouvait rajouter une table de lien avec *panflute*.
 pandoc](https://scorreia.com/software/panflute/) et l'exemple qui suit
 est dérivé directement du code d'exemple :
 
-```{=tex}
 \newpage
-```
+
 ``` python
 #!/usr/bin/env python
 from panflute import *
@@ -283,49 +282,59 @@ plume, de l'édition, jusqu'à la reliure.
 
 # Références
 
--   syntaxe bash <https://tldp.org/LDP/abs/html/>
--   la documentation markdown
-    <https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>
--   le site où trouver ce livre et comment le fabriquer
-    <https://github.com/jul/faire_un_livre>
--   [exemple de livre fait avec
-    gabarit](https://github.com/jul/faire_un_livre/exemple/sherpa.pdf)
+- syntaxe bash <https://tldp.org/LDP/abs/html/>
+- la documentation markdown
+  <https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>
+- le site où trouver ce livre et comment le fabriquer
+  <https://github.com/jul/faire_un_livre>
+- [exemple de livre fait avec
+  gabarit](https://github.com/jul/faire_un_livre/exemple/sherpa.pdf)
 
-<div>
-
+::: {}
 # Liste des liens
 
-https://git-scm.com/downloads
+[https://git-scm.com/downloads]()
 :   Que vous soyez sous linux ou windows, mes outils favoris sont inclus quand vous installez le client git
 
-https://github.com/ScoopInstaller/Scoop
+[https://github.com/ScoopInstaller/Scoop]()
 :   l'installeur en ligne de commande scoop pour windows
 
-https://chocolatey.org/install#individual
+[https://chocolatey.org/install#individual]()
 :   l'installeur en ligne de commande choco pour windows
 
-http://pandoc.org
+[http://pandoc.org]()
 :   Le logiciel pandoc a un site clair mais ... en anglais
 
-https://www.jdbonjour.ch/cours/markdown-pandoc/
+[https://www.jdbonjour.ch/cours/markdown-pandoc/]()
 :   J'ai pu trouvé un cours pas dégueu (il semble avoir été donné à l'EPFL) sur le sujet de pandoc et markdown
 
-https://pandoc.org/filters.html
+[https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax]()
+:   https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+[https://pandoc.org/filters.html]()
 :   la documentation de pandoc est claire quoique concise
 
-https://stackoverflow.com/questions/tagged/pandoc?tab=Votes
+[https://stackoverflow.com/questions/tagged/pandoc?tab=Votes]()
 :   on trouve beaucoup de question réponses sur pandoc sur stackoverflow
 
-https://scorreia.com/software/panflute/
+[https://scorreia.com/software/panflute/]()
 :   Panflute est un module python bien documenté pour faire des filtres pandoc
 
-https://brailleinstitute.org/freefont
+[https://brailleinstitute.org/freefont]()
 :   fonte conçue par l'institut braille
 
-https://github.com/jul/faire_un_livre/exemple/sherpa.pdf
+[https://tldp.org/LDP/abs/html/]()
+:   https://tldp.org/LDP/abs/html/
+
+[https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax]()
+:   https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+[https://github.com/jul/faire_un_livre]()
+:   https://github.com/jul/faire_un_livre
+
+[https://github.com/jul/faire_un_livre/exemple/sherpa.pdf]()
 :   exemple de livre fait avec gabarit
 
-https://github.com/jul/faire_un_livre/blob/main/doc/livre.pdf
+[https://github.com/jul/faire_un_livre/blob/main/doc/livre.pdf]()
 :   Le résultat généré est ici et le lien visible à la fin dans la liste des liens
-
-</div>
+:::
